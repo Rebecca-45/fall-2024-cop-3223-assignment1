@@ -16,13 +16,12 @@
 #include <math.h>
 #define PI 3.1415
 
-//********************************************************
-// double calculate_distance()
+// double calculateDistance()
 // Purpose:         Initiates the calculation of the distance of a circle.
-// Output:          Prints the distance output for the cirlce.
-//********************************************************
+// Output:          Prints the distance output for the circle.
 
-double calculate_distance()
+
+double calculateDistance()
 {
     double x1, x2, y1, y2, distance;
         
@@ -37,7 +36,8 @@ double calculate_distance()
        
 
     double x_squared = (x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1);
-    printf("square root is: %lf\n", x_squared);
+    printf("square root is: %0.3lf\n", x_squared);
+    
     distance = sqrt(x_squared);
     printf("the distance between the two points are: %0.3lf\n", distance);
 
@@ -45,48 +45,42 @@ double calculate_distance()
     return distance;
 }
 
-//********************************************************
-// double calculate_height()
+// double calculateHeight()
 // Purpose:         Initiates the calculation of the height of a circle.
-// Output:          Prints the height output for the cirlce.
-//********************************************************
+// Output:          Prints the height output for the circle.
 
-double calculate_height()
+double calculateHeight()
 {
     
-    double h = calculate_distance();
+    double h = calculateDistance();
     printf ("\nheight of the circle: %0.3lf", h);
     double difficultylevel = 5.0;
 
 return difficultylevel;
 }
 
-//********************************************************
-// double calculate_width()
+// double calculateWidth()
 // Purpose:         Initiates the calculation of the width of a circle.
-// Output:          Prints the width output for the cirlce.
-//********************************************************
+// Output:          Prints the width output for the circle.
 
-double calculate_width()
+double calculateWidth()
 {
 
-    double w = calculate_distance();
+    double w = calculateDistance();
     printf ("\nwidth of the circle: %0.3lf", w);
     double difficultylevel = 5.0;
 
     return difficultylevel;
 }
 
-//********************************************************
-// double calculate_perimeter()
+// double calculatePerimeter()
 // Purpose:         Initiates the calculation of the perimeter of a circle.
-// Output:          Prints the perimeter output for the cirlce.
-//********************************************************
+// Output:          Prints the perimeter output for the circle.
 
-double calculate_perimeter()
+double calculatePerimeter()
 
 {
-    double distance = calculate_distance();
+    double distance = calculateDistance();
     double p = 2 * (distance + distance);
 	printf("\nperimeter of the circle: %0.3lf", p);
     double difficultylevel = 5.0;
@@ -94,15 +88,13 @@ double calculate_perimeter()
     return difficultylevel;
 }
 
-//********************************************************
-// double calculate_area()
+// double calculateArea()
 // Purpose:         Initiates the calculation of the area of a circle.
-// Output:          Prints the area output for the cirlce.
-//********************************************************
+// Output:          Prints the area output for the circle.
 
-double calculate_area()
+double calculateArea()
 {
-    double distance = calculate_distance();
+    double distance = calculateDistance();
     double a = (distance * distance);
     printf("\narea of the circle: %0.3lf", a);
     double difficultylevel = 5.0;
@@ -117,16 +109,17 @@ double calculate_area()
 int main(int argc, char *argv[])
 {
 
-    calculate_distance();
+    calculateDistance();
 
-    calculate_height();
+    calculateHeight();
 
-    calculate_width();
+    calculateWidth();
     
-    calculate_perimeter();
+    calculatePerimeter();
 
-    calculate_area();
+    calculateArea();
 
 
     return 0;
 }
+
