@@ -24,7 +24,8 @@
 double calculateDistance()
 {
     double x1, x2, y1, y2, distance;
-        
+
+	//user inputs for each variable        
          printf("\nEnter the value for point x1: ");
      scanf("%lf", &x1);
          printf("\nEnter the value for point x2: ");
@@ -36,10 +37,10 @@ double calculateDistance()
        
 
     double x_squared = (x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1);
-    printf("square root is: %0.3lf\n", x_squared);
+    printf("square root is: %0.3lf\n", x_squared);                   //prints the square root based on the user inputs for each variable
     
     distance = sqrt(x_squared);
-    printf("the distance between the two points are: %0.3lf\n", distance);
+    printf("the distance between the two points are: %0.3lf\n", distance);   //prints the distance between two points in a circle based on user inputs for each variable
 
     
     return distance;
@@ -53,7 +54,7 @@ double calculateHeight()
 {
     
     double h = calculateDistance();
-    printf ("\nheight of the circle: %0.3lf", h);
+    printf ("\nheight of the circle: %0.3lf", h);     //prints the height of circle based on user inputs
     double difficultylevel = 5.0;
 
 return difficultylevel;
@@ -67,7 +68,7 @@ double calculateWidth()
 {
 
     double w = calculateDistance();
-    printf ("\nwidth of the circle: %0.3lf", w);
+    printf ("\nwidth of the circle: %0.3lf", w);      //prints the width of circle based on user inputs
     double difficultylevel = 5.0;
 
     return difficultylevel;
@@ -82,7 +83,7 @@ double calculatePerimeter()
 {
     double distance = calculateDistance();
     double p = PI * (distance);
-	printf("\nperimeter of the circle: %0.3lf", p);
+	printf("\nperimeter of the circle: %0.3lf", p);   //prints the perimeter of circle based on user inputs
     double difficultylevel = 5.0;
 
     return difficultylevel;
@@ -96,7 +97,7 @@ double calculateArea()
 {
     double distance = calculateDistance();
     double a = PI * (distance * distance)/4;
-    printf("\narea of the circle: %0.3lf", a);
+    printf("\narea of the circle: %0.3lf", a);           //prints the area of circle based on user inputs
     double difficultylevel = 5.0;
     
     return difficultylevel;
@@ -109,6 +110,7 @@ double calculateArea()
 int main(int argc, char *argv[])
 {
 
+//calling all the functions defined above
     calculateDistance();
 
     calculateHeight();
