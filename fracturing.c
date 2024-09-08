@@ -81,7 +81,7 @@ double calculatePerimeter()
 
 {
     double distance = calculateDistance();
-    double p = 2 * (distance + distance);
+    double p = PI * (distance);
 	printf("\nperimeter of the circle: %0.3lf", p);
     double difficultylevel = 5.0;
 
@@ -95,7 +95,7 @@ double calculatePerimeter()
 double calculateArea()
 {
     double distance = calculateDistance();
-    double a = (distance * distance);
+    double a = PI * (distance * distance);
     printf("\narea of the circle: %0.3lf", a);
     double difficultylevel = 5.0;
     
@@ -122,4 +122,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-
