@@ -5,7 +5,7 @@
 // Class: COP 3223, Professor Parra
 // Purpose: The main purpose of this assignment is to breakdown each function 
 //with different responsibilities assigned to it. 
-// Input: calculations based on user inputs for each function 
+// Input: Inputs by the user
 //
 // Output: This assignment gives the calculation of distance, height, width, perimeter, and area of a circle. 
 // //********************************************************
