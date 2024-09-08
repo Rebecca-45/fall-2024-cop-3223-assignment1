@@ -82,7 +82,7 @@ double calculatePerimeter()
 {
     double distance = calculateDistance();
     double p = PI * (distance);
-	printf("\nperimeter of the circle: %0.3lf", p);
+    printf("\nperimeter of the circle: %0.3lf", p);
     double difficultylevel = 5.0;
 
     return difficultylevel;
